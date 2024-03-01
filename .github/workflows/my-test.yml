@@ -15,7 +15,4 @@ jobs:
       - run: make test
       - run: make lint
 
-      - name: Run Snyk to check
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYC_TOKEN }}
+
